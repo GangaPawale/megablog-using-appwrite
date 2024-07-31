@@ -1,99 +1,143 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import Logo from '../Logo'
 
 function Footer() {
     return (
-        <footer className="py-12 bg-gray-50 xl:pt-24 dark:bg-gray-800 w-full" >
-            <div className="w-full px-4 mx-auto max-w-8xl">
-                <div className="grid gap-12 xl:grid-cols-6 xl:gap-24">
-                    <div className="col-span-2">
-                        <a href="https://flowbite.com/" className="flex mb-5">
-                            <img src="/docs/images/logo.svg" className="h-8 mr-3" alt="Flowbite Logo" />
-                            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-                        </a>
-                        <p className="max-w-lg mb-3 text-gray-600 dark:text-gray-400">Flowbite is a library of interactive UI components built with Tailwind CSS that can get you started building websites faster and more efficiently.</p>
-                        <p className="max-w-lg text-gray-600 dark:text-gray-400">Code licensed <a href="https://github.com/themesberg/flowbite/blob/main/LICENSE.md" className="text-blue-600 dark:text-blue-500 hover:underline" rel="nofollow">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" className="text-blue-600 hover:underline dark:text-blue-500" rel="nofollow">CC BY 3.0</a>.</p>
+        <section className="relative overflow-hidden py-10 bg-gray-400 border border-t-2 border-t-black">
+            <div className="relative z-10 mx-auto max-w-7xl px-4">
+                <div className="-m-6 flex flex-wrap">
+                    <div className="w-full p-6 md:w-1/2 lg:w-5/12">
+                        <div className="flex h-full flex-col justify-between">
+                            <div className="mb-4 inline-flex items-center">
+                                <Logo width="100px" />
+                            </div>
+                            <div>
+                                <p className="text-sm text-gray-600">
+                                    &copy; Copyright 2023. All Rights Reserved by DevUI.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h3 className="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Resources</h3>
-                        <ul>
-                            <li className="mb-4">
-                                <a href="https://flowbite.com/" className="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Documentation</a>
-                            </li>
-                            <li className="mb-4">
-                                <a href="https://flowbite.com/blocks/" className="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Flowbite Blocks</a>
-                            </li>
-                            <li className="mb-4">
-                                <a href="https://flowbite.com/figma/" className="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Figma Design</a>
-                            </li>
-                            <li className="mb-4">
-                                <a href="https://flowbite.com/icons/" className="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Flowbite Icons</a>
-                            </li>
-                            <li className="mb-4">
-                                <a href="https://chat.openai.com/g/g-y7yC35HB9-flowbite-gpt" className="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Flowbite GPT</a>
-                            </li>
-                            <li className="mb-4">
-                                <a href="https://flowbite.com/pro/" className="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Pro version</a>
-                            </li>
-                        </ul>
+                    <div className="w-full p-6 md:w-1/2 lg:w-2/12">
+                        <div className="h-full">
+                            <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
+                                Company
+                            </h3>
+                            <ul>
+                                <li className="mb-4">
+                                    <Link
+                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
+                                        to="/"
+                                    >
+                                        Features
+                                    </Link>
+                                </li>
+                                <li className="mb-4">
+                                    <Link
+                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
+                                        to="/"
+                                    >
+                                        Pricing
+                                    </Link>
+                                </li>
+                                <li className="mb-4">
+                                    <Link
+                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
+                                        to="/"
+                                    >
+                                        Affiliate Program
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
+                                        to="/"
+                                    >
+                                        Press Kit
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div>
-                        <h3 className="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Help and support</h3>
-                        <ul>
-                            <li className="mb-4">
-                                <a href="https://flowbite.com/contact/" rel="noreferrer nofollow" className="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Contact us</a>
-                            </li>
-                            <li className="mb-4">
-                                <a href="https://github.com/themesberg/flowbite/discussions" rel="noreferrer nofollow" className="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Github discussions</a>
-                            </li>
-                            <li className="mb-4 flex items-center">
-                                <a href="https://flowbite.com/work-with-us/" className="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Hire us </a>
-                                <span className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-2">
-                                    New
-                                </span>
-                            </li>
-                        </ul>
+                    <div className="w-full p-6 md:w-1/2 lg:w-2/12">
+                        <div className="h-full">
+                            <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
+                                Support
+                            </h3>
+                            <ul>
+                                <li className="mb-4">
+                                    <Link
+                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
+                                        to="/"
+                                    >
+                                        Account
+                                    </Link>
+                                </li>
+                                <li className="mb-4">
+                                    <Link
+                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
+                                        to="/"
+                                    >
+                                        Help
+                                    </Link>
+                                </li>
+                                <li className="mb-4">
+                                    <Link
+                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
+                                        to="/"
+                                    >
+                                        Contact Us
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
+                                        to="/"
+                                    >
+                                        Customer Support
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div>
-                        <h3 className="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Follow us</h3>
-                        <ul>
-                            <li className="mb-4">
-                                <a href="https://discord.gg/4eeurUVvTy" rel="noreferrer nofollow" className="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Discord</a>
-                            </li>
-                            <li className="mb-4">
-                                <a href="https://github.com/themesberg/flowbite" className="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Github</a>
-                            </li>
-                            <li className="mb-4">
-                                <a href="https://twitter.com/zoltanszogyenyi" rel="noreferrer nofollow" className="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Twitter/X</a>
-                            </li>
-                            <li className="mb-4">
-                                <a href="https://www.linkedin.com/in/zoltanszogyenyi/" rel="noreferrer nofollow" className="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">LinkedIn</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 className="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Legal</h3>
-                        <ul>
-                            <li className="mb-4">
-                                <a href="https://flowbite.com/license/" className="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">License (EULA)</a>
-                            </li>
-                            <li className="mb-4">
-                                <a href="https://flowbite.com/privacy-policy/" className="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Privacy Policy</a>
-                            </li>
-                            <li className="mb-4">
-                                <a href="https://flowbite.com/terms-and-conditions/" className="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Terms &amp; Conditions</a>
-                            </li>
-                            <li className="mb-4">
-                                <a href="https://flowbite.com/brand/" className="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Brand guideline</a>
-                            </li>
-                        </ul>
+                    <div className="w-full p-6 md:w-1/2 lg:w-3/12">
+                        <div className="h-full">
+                            <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
+                                Legals
+                            </h3>
+                            <ul>
+                                <li className="mb-4">
+                                    <Link
+                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
+                                        to="/"
+                                    >
+                                        Terms &amp; Conditions
+                                    </Link>
+                                </li>
+                                <li className="mb-4">
+                                    <Link
+                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
+                                        to="/"
+                                    >
+                                        Privacy Policy
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
+                                        to="/"
+                                    >
+                                        Licensing
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <hr className="my-8 border-gray-200 dark:border-gray-700 lg:my-12" />
-                <span className="block text-center text-gray-600 dark:text-gray-400 font-">© 2019-<span id="currentYear">2024</span> <a href="https://flowbite.com/">Flowbite™</a> is a registered trademark. All Rights Reserved.
-                </span>
             </div>
-        </footer>
+        </section>
     )
 }
 
-export default Footer 
+export default Footer
