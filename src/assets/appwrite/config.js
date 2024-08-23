@@ -10,6 +10,7 @@ export class Service{
     constructor(){
         this.client.setEndpoint(conf.appwriteUrl)
         .setProject(conf.appwriteProjectId)
+        
 
         this.databases=new Databases(this.lient)
         this.bucket=new Storage(this.client)
@@ -101,6 +102,7 @@ export class Service{
         }
     }
 
+
     async deleteFile(fileId){
         try{
             return await this.bucket.deleteFile(
@@ -112,6 +114,7 @@ export class Service{
             return false;
         }
     }
+
 
     getfilePreview(fileId){
         try{
@@ -127,5 +130,6 @@ export class Service{
     }
 
 }
+
 const service =new Service()
 export  default service 
